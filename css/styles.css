@@ -30,32 +30,24 @@ h2{
     align-items: center;
 }
 
-.item-to-do p{
+#cont-to-do-list .item-to-do p{
     margin-top: 15px;
     margin-left: 5px;
+    margin-right: auto;
 }
 
-.item-to-do .equis{
-    margin-left: 500px;
-    background-color: red;
-    color: white;
-}
-
-.cont-completed-list{
+#cont-completed-list{
     display: flex;
     align-items: center;
 }
 
-.cont-completed-list p{
+#cont-completed-list p{
     margin-top: 15px;
     margin-left: 5px;
+    margin-right: auto;
 }
 
-.cont-completed-list .equis{
-    margin-left: 500px;
-    background: red;
-    color: white;
-}
+
 
 
 
