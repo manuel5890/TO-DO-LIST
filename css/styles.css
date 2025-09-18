@@ -28,12 +28,14 @@ h2{
 .item-to-do{
     display: flex;
     align-items: center;
+    width: 100%;
 }
 
 #cont-to-do-list .item-to-do p{
     margin-top: 15px;
     margin-left: 5px;
-    margin-right: auto;
+    width: 100%;
+    word-break: break-all;
 }
 
 #cont-completed-list{
@@ -41,10 +43,12 @@ h2{
     align-items: center;
 }
 
-#cont-completed-list p{
+#cont-completed-list .item-to-do p{
     margin-top: 15px;
     margin-left: 5px;
-    margin-right: auto;
+    width: 100%;
+    background: red;
+    word-break: break-all;
 }
 
 
