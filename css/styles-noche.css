@@ -1,4 +1,4 @@
-#global-content{
+/* #global-content{
     max-width: 700px;
     width: 100%;
     margin: 0 auto;
@@ -65,10 +65,110 @@ h2{
     cursor: pointer;
     color: wheat;
 }
+ */ 
 
 
+ 
+#global-content {
+    max-width: 700px;
+    width: 100%;
+    margin: 0 auto;
+    border: 2px solid #58a6ff; /* borde azul brillante */
+    margin-top: 50px;
+    border-radius: 20px;
+    background: #161b22; /* fondo gris azulado oscuro */
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.7);
+}
 
+body {
+    background: #0d1117;
+    color: #e6edf3;
+    font-family: 'Segoe UI', sans-serif;
+}
 
+h1 {
+    text-align: center;
+    color: #ffffff;
+    font-weight: bold;
+}
 
+hr {
+    margin: 30px 0;
+    border: none;
+    border-top: 2px solid #58a6ff; /* separador mucho más visible */
+}
 
+h2 {
+    color: #58a6ff;
+    font-size: 25px;
+    font-weight: 600;
+}
 
+.formulario .añadir {
+    margin-left: 400px;
+}
+
+.item-to-do {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background: #1e232b;
+    border: 2px solid #30363d; /* borde más grueso y visible */
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 12px;
+    transition: background 0.3s ease, border-color 0.3s ease;
+}
+
+.item-to-do:hover {
+    background: #2b313a;
+    border-color: #58a6ff; /* resaltado al pasar el mouse */
+}
+
+#cont-to-do-list .item-to-do p {
+    margin-top: 15px;
+    margin-left: 5px;
+    width: 100%;
+    word-break: break-word;
+    color: #ffffff;
+}
+
+#cont-completed-list {
+    align-items: center;
+}
+
+#cont-completed-list .item-to-do {
+    border-color: #2ea043; /* verde para diferenciar completados */
+}
+
+#cont-completed-list .item-to-do p {
+    margin-top: 15px;
+    margin-left: 5px;
+    width: 100%;
+    word-break: break-word;
+    text-decoration: line-through;
+    color: #8b949e;
+    background: #2ea04322;
+    border-radius: 6px;
+    padding: 5px;
+}
+
+#change-styles {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    padding: 10px 15px;
+    background: #238636;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    border: 2px solid #2ea043; /* borde visible */
+    transition: background 0.3s ease, transform 0.2s ease, border-color 0.3s ease;
+}
+
+#change-styles:hover {
+    transform: scale(1.05);
+    background: #2ea043;
+    border-color: #58a6ff; /* cambia el borde al pasar el mouse */
+}

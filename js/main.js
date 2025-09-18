@@ -95,3 +95,21 @@ const btnStyles = document.getElementById('change-styles');
         }
 })
 
+// Detectar cuando el usuario presiona Enter en el input
+input.addEventListener('keydown', (event) => {
+    if (event.key === 'Enter') { // ⬅️ Verifica si fue Enter
+        event.preventDefault(); // Evita que se recargue la página
+
+        const textoItem = input.value.trim();
+
+        if (textoItem === "") {
+            alert("No se puede crear una tarea vacía");
+        } else {
+            const newItem = createToDoItem(textoItem);
+            toDoList.appendChild(newItem);
+            input.value = ""; 
+            eventsToItems(newItem);
+            input.focus(); // ⬅️ vuelve a enfocar el input para seguir escribiendo
+        }
+    }
+});

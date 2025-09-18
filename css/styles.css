@@ -1,4 +1,4 @@
-#global-content{
+/* #global-content{
     max-width: 700px;
     width: 100%;
     margin: 0 auto;
@@ -64,10 +64,109 @@ h2{
     color: wheat;
     border-radius: 10px;
 }
+*/
 
 
+#global-content {
+    max-width: 700px;
+    width: 100%;
+    margin: 0 auto;
+    border: 2px solid #cccccc; /* gris suave */
+    margin-top: 50px;
+    border-radius: 20px;
+    background: #ffffff; /* blanco limpio */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.05);
+}
 
+body {
+    background: #f4f4f4; /* gris claro en vez de blanco chillón */
+    color: #333333; /* texto gris oscuro */
+    font-family: 'Segoe UI', sans-serif;
+}
 
+h1 {
+    text-align: center;
+    color: #222222;
+    font-weight: bold;
+}
 
+hr {
+    margin: 30px 0;
+    border: none;
+    border-top: 1px solid #cccccc; /* separador suave */
+}
 
+h2 {
+    color: #4a90e2; /* azul elegante y menos saturado */
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.formulario .añadir {
+    margin-left: 400px;
+}
+
+.item-to-do {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background: #f9f9f9; /* gris muy claro */
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+    padding: 8px;
+    margin-bottom: 10px;
+    transition: background 0.3s ease, border-color 0.3s ease;
+}
+
+.item-to-do:hover {
+    background: #f1f1f1;
+    border-color: #4a90e2; /* azul suave al hover */
+}
+
+#cont-to-do-list .item-to-do p {
+    margin-top: 15px;
+    margin-left: 5px;
+    width: 100%;
+    word-break: break-word;
+    color: #333333;
+}
+
+#cont-completed-list {
+    align-items: center;
+}
+
+#cont-completed-list .item-to-do {
+    border-color: #a3d9a5; /* verde pastel */
+}
+
+#cont-completed-list .item-to-do p {
+    margin-top: 15px;
+    margin-left: 5px;
+    width: 100%;
+    word-break: break-word;
+    text-decoration: line-through;
+    color: #555555;
+    background: #e7f6e7; /* verde muy suave de fondo */
+    border-radius: 6px;
+    padding: 5px;
+}
+
+#change-styles {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    padding: 10px 15px;
+    background: #4a90e2; /* azul elegante */
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    border: none;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+#change-styles:hover {
+    transform: scale(1.05);
+    background: #6aa8ed; /* azul un poco más claro al hover */
+}
 
