@@ -2,10 +2,14 @@
     max-width: 700px;
     width: 100%;
     margin: 0 auto;
-    border: 2px solid black;
+    border: 2px solid rgb(121, 70, 70);
     margin-top: 50px;
     border-radius: 20px;
-    background: cyan;
+    background: rgb(37, 56, 56);
+}
+
+body{
+    background: black;
 }
 
 h1{
@@ -17,7 +21,7 @@ hr{
 }
 
 h2{
-    color: red;
+    color: rgb(255, 255, 255);
     font-size: 25px;
 }
 
@@ -46,12 +50,10 @@ h2{
     margin-top: 15px;
     margin-left: 5px;
     width: 100%;
-    background: red;
     word-break: break-all;
-}
-
-#cont-completed-list .item-to-do p{
+    color: white;
     text-decoration: line-through;
+    color: white;
 }
 
 #change-styles{
@@ -59,10 +61,9 @@ h2{
     bottom: 10px;
     right: 10px;
     padding: 10px;
-    background: black;
+    background: rgb(136, 115, 115);
     cursor: pointer;
     color: wheat;
-    border-radius: 10px;
 }
 
 
